@@ -6,8 +6,8 @@
 		</title>
 	<link rel="stylesheet" type="text/css" href="	styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="	fonts/font-awesome/css/font-awesome.min.css">
-  <script src="../scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
-	<script src="../scripts/scripts.js" type="text/javascript"></script>
+  <script src="scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="scripts/scripts.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -20,12 +20,10 @@
 									<img class="headerPic" src="images/bowling.jpg">
 									</a>
 							</li>
-						<span class = "headerLinks">
 							<li><a href="#portfolio" title="portfolio" class="links">Portfolio</a></li>
 			    		<li><a href="#about" title="About" class="links">About Me</a></li>
 			    		<li><a href="#experience" title= "Experience" class="links">Experience</a></li>
 			    		<li><a href="#contact" title="Contact" class="links">Contact Me</a></li>
-						</span>
 			    </ul>
 		    </div>
 
@@ -53,6 +51,7 @@
 		  			<h2>
 		  				About Me
 		  			</h2>
+								<img class="headerPic" src="images/bowling.jpg">
 			  			<p>
 			  				Hi! I'm Joe, I am currently a student at General Assembly, learning to become a full stack Web Developer!
 			  			</p>
@@ -65,7 +64,7 @@
 		  				Prior Experience
 		  			</h2>
 			  			<p>
-			  				As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I am responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I am able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
+			  				As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I was responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I was able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
 			  			</p>
 	  		</div>
 	  </div>
@@ -88,12 +87,15 @@
 						<span>
 							<a i class = "fa fa-facebook" href="https://www.facebook.com/joe.zaretsky" title="facebook"></a>
 						</span>
-						<div>
-							1410 11th St NW Apt. 1
-						</div>
-						<div>
-						Washington, DC 20001
-						</div>
+						<span>
+							<a id = "address" i class = "fa fa-globe" title="homeAddress"></a>
+						</span>
+							<div id="overlay"></div>
+							<div id="popup">
+								<div>Joe Glatman Zaretsky</div>
+								<div>1410 11th St NW Apt. 1</div>
+								<div>Washington, DC 20001</div>
+							</div>
 						<div>
 							(347) 256-7665
 						</div>

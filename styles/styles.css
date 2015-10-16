@@ -13,8 +13,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  left: 0;
-  top: 0;
+  /*left: 0;
+  top: 0;*/
   margin: 0 auto;
 }
 
@@ -43,6 +43,10 @@ header {
 	width: 10%;
 	height: 2em;
 }
+
+/*.headerLinks {
+	display:inline-block;
+}*/
 
 @media only screen and (max-width: 850px) {
 	    .headerNav li, #aboutme, #experience, #contact {
@@ -84,23 +88,23 @@ li a img.headerPic:hover {
 }
 
 .adventure {
-	width: 200px;
-	height: auto;
+	width: 250px;
+	height: 175px;
 }
 
 .adventure:hover {
-	width: 400px;
-	height: auto;
+	width: auto;
+	height: 300px;
 }
 
 .hippy {
-	width: 200px;
-	height: auto;
+	width: 250px;
+	height: 175px;
 }
 
 .hippy:hover {
-	width: 400px;
-	height: auto;
+	width: auto;
+	height: 300px;
 }
 
 .aboutMe {
@@ -155,4 +159,32 @@ li a img.headerPic:hover {
 
 .fa-envelope {
 	text-decoration: none;
+}
+
+.fa-globe {
+	text-decoration: none;
+}
+
+#overlay {
+   display:none;
+   position:fixed;
+   left:0px;
+   top:0px;
+   width:100%;
+   height:100%;
+   background:#000;
+   opacity:0.5;
+   z-index:99999;
+}
+
+#popup {
+   display:none;
+   position:fixed;
+   left:40%;
+   top:80%;
+   width:200px;
+   height:100px;
+   background:#FFFFFF;
+   border:2px solid #000;
+   z-index:100000;
 }
