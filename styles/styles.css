@@ -1,10 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	width: 100%;
 	margin-left: 0;
   margin-top: 0;
 }
 
-#topBackground {
+.body {
 	background: url("../images/norway2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -17,30 +21,27 @@ body {
 header {
   text-align: center;
   font-family: Arial;
-	padding-bottom: 8.25em;
+	padding-bottom: 3em;
 }
 
-	.headerNav {
+.headerNav {
 	position: fixed;
 	width: 100%;
+	top: 0;
 }
 
-	.headerNav ul {
+.headerNav ul {
 	list-style-type: none;
 	margin: 0 auto;
 	padding: 0;
-}
-
-ul.nav {
 	background-color: rgba(0, 0, 0,0.4);
 }
 
-	.headerNav li {
+.headerNav li {
 	font-size: 1em;
 	display: inline-table;
 	width: 10%;
 	height: 2em;
-	padding-top: .5em;
 }
 
 @media only screen and (max-width: 850px) {
@@ -55,21 +56,26 @@ ul.nav {
     }
 }
 
-	.headerNav li a.links {
+.headerNav li a.links {
 	text-decoration:none;
 	color:#d4d5c8;
 }
 
-	.headerNav li a:hover {
+.headerNav li a:hover {
 	color:#fff;
 }
 
-li a img.headerpic {
+li a img.headerPic {
+  border-radius: 50%;
+  height: 2em;
+}
+
+li a img.headerPic:hover {
   border-radius: 50%;
   height: 5em;
 }
 
-#aboutme {
+.portfolio {
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -77,37 +83,55 @@ li a img.headerpic {
 	font-family: Arial;
 }
 
-#aboutme h2 {
+.adventure {
+	width: 200px;
+	height: auto;
+}
+
+.adventure:hover {
+	width: 400px;
+	height: auto;
+}
+
+.hippy {
+	width: 200px;
+	height: auto;
+}
+
+.hippy:hover {
+	width: 400px;
+	height: auto;
+}
+
+.aboutMe {
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	color: #fff;
 	font-family: Arial;
 }
 
-#aboutme h3 {
-	color: #fff;
-	font-family: Arial;
+.aboutMe p {
 	font-weight: normal;
 	margin-left: 25%;
 	margin-right: 25%;
 }
 
 
-#experience h2 {
+.experience {
 	text-align: center;
 	color: #fff;
 	font-family: Arial;
 }
 
-#experience h3 {
-	text-align: center;
-	color: #fff;
-	font-family: Arial;
+.experience p {
 	font-weight: normal;
 	margin-left: 25%;
 	margin-right: 25%;
 	padding-bottom: 5%;
 }
 
-#contact {
+.contact {
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -115,8 +139,20 @@ li a img.headerpic {
 	font-family: Arial;
     }
 
-#contact ul {
+.contact ul {
 	list-style-type: none;
 	font-weight: normal;
 	padding: 0;
+}
+
+.fa-facebook {
+	text-decoration: none;
+}
+
+.fa-linkedin-square {
+	text-decoration: none;
+}
+
+.fa-envelope {
+	text-decoration: none;
 }

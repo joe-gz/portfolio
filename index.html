@@ -5,82 +5,100 @@
 		Portfolio - Joe GZ
 		</title>
 	<link rel="stylesheet" type="text/css" href="	styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="	fonts/font-awesome/css/font-awesome.min.css">
   <script src="../scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
 	<script src="../scripts/scripts.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 	  <a name="top"></a>
-		<div id="topBackground">
-		<header>
-			<div class="headerNav">
-				<ul>
-		    		<li><a href="#top" title="Home">
-		    			  <img class="headerpic" src="images/bowling.jpg">
-		    			</a>
-		    		</li>
-		    </ul>
-		    <ul class="nav">
-						<li><a href="#portfolio" title="portfolio" class="links">Portfolio</a></li>
-		    		<li><a href="#about" title="About" class="links">About Me</a></li>
-		    		<li><a href="#experience" title= "Experience" class="links">Experience</a></li>
-		    		<li><a href="#contact" title="Contact" class="links">Contact Me</a></li>
-		    </ul>
-	    </div>
+		<div class="body">
+			<header>
+				<div class="headerNav">
+			    <ul>
+							<li><a href="#top" title="Home">
+									<img class="headerPic" src="images/bowling.jpg">
+									</a>
+							</li>
+						<span class = "headerLinks">
+							<li><a href="#portfolio" title="portfolio" class="links">Portfolio</a></li>
+			    		<li><a href="#about" title="About" class="links">About Me</a></li>
+			    		<li><a href="#experience" title= "Experience" class="links">Experience</a></li>
+			    		<li><a href="#contact" title="Contact" class="links">Contact Me</a></li>
+						</span>
+			    </ul>
+		    </div>
 
-	  </header>
+		  </header>
 
-	  	<article>
-	  		<div id="aboutme">
+				<div class="portfolio">
+					<a name="portfolio"></a>
+						<h2>
+							Portfolio
+						</h2>
+							<span>
+								<a href="https://github.com/joe-gz/choose_your_own_adventure_js" title="adventure">
+									<img class="adventure" src="images/chooseAdventure.png">
+								</a>
+							</span>
+							<span>
+								<a href="https://github.com/joe-gz/hippy-portfolio" title="hippyPortfolio">
+									<img class="hippy" src="images/hippyPortfolio.png">
+								</a>
+							</span>
+				</div>
+
+	  		<div class="aboutMe">
 	  			<a name="about"></a>
 		  			<h2>
 		  				About Me
 		  			</h2>
-		  			<h3>
-		  				Hello! My name is Joe Glatman Zaretsky, and I am applying to participate in General Assembly's Web Development Immersive program, starting in October.  A little background: I am originally from New York City; I grew up in Brooklyn.  I attended Macalester College in St. Paul, MN, where I double-majored in Economics and Classical Languages.  I stayed in Minnesota for another year and a half after college to work as a Global Sourcing Business Analyst at Target.  I moved to Washington DC 3 years ago to work as a Senior Strategy Analyst at The Advisory Board Company.  I have long been interested in web development, and I recently began to teach myself the basics.  Given the amount that I've enjoyed it, the next step is for me to participate in General Assembly's class and pursue a new career path.
-		  			</h3>
+			  			<p>
+			  				Hi! I'm Joe, I am currently a student at General Assembly, learning to become a full stack Web Developer!
+			  			</p>
 	  		</div>
-	  	</article>
 
 
-	  	<article>
-	  		<div id="experience">
+	  		<div class="experience">
 		  		<a name="experience"></a>
 		  			<h2>
-		  				Current Employment
+		  				Prior Experience
 		  			</h2>
-		  			<h3>
-		  				As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I am responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I am able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
-		  			</h3>
+			  			<p>
+			  				As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I am responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I am able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
+			  			</p>
 	  		</div>
-	  	</article>
 	  </div>
 
-		<article>
-			<div id="contact">
+		<footer>
+			<div class="contact">
 				<a name="contact"></a>
 					<h2>
 						Contact Information
 					</h2>
-						<ul>
-							<li>
-								Joe Glatman Zaretsky
-							</li>
-							<li>
-								1410 11th St NW Apt. 1
-							</li>
-							<li>
-							Washington, DC 20001
-							</li>
-							<li>
-								(347) 256-7665
-							</li>
-							<li>
-								Jglatmanzaretsky@gmail.com
-							</li>
-						</ul>
+						<div>
+							Joe Glatman Zaretsky
+						</div>
+						<span>
+							<a i class = "fa fa-envelope" href="mailto:Jglatmanzaretsky@gmail.com"></a>
+						</span>
+						<span>
+							<a i class = "fa fa-linkedin-square" href="https://www.linkedin.com/pub/joseph-glatman-zaretsky/10/1/a29" title="facebook"></a>
+						</span>
+						<span>
+							<a i class = "fa fa-facebook" href="https://www.facebook.com/joe.zaretsky" title="facebook"></a>
+						</span>
+						<div>
+							1410 11th St NW Apt. 1
+						</div>
+						<div>
+						Washington, DC 20001
+						</div>
+						<div>
+							(347) 256-7665
+						</div>
 			</div>
-		</article>
+		</footer>
 
 		<script type="text/javascript">
 		  $(".links").on("click", function() {
