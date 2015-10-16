@@ -1,31 +1,31 @@
 body {
 	width: 100%;
 	margin-left: 0;
-    margin-top: 0;
+  margin-top: 0;
 }
 
-#topbackground {
-	background: url("../images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
-    }
+#topBackground {
+	background: url("../images/norway2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+}
 
 header {
-    text-align: center;
-    font-family: Arial;
+  text-align: center;
+  font-family: Arial;
 	padding-bottom: 8.25em;
 }
 
-#headernav {
+	.headerNav {
 	position: fixed;
 	width: 100%;
 }
 
-#headernav ul {
+	.headerNav ul {
 	list-style-type: none;
 	margin: 0 auto;
 	padding: 0;
@@ -35,7 +35,7 @@ ul.nav {
 	background-color: rgba(0, 0, 0,0.4);
 }
 
-#headernav li {
+	.headerNav li {
 	font-size: 1em;
 	display: inline-table;
 	width: 10%;
@@ -44,46 +44,46 @@ ul.nav {
 }
 
 @media only screen and (max-width: 850px) {
-    #headernav li, #aboutme, #experience, #contact {
+	    .headerNav li, #aboutme, #experience, #contact {
         font-size: .8em;
     }
 }
 
 @media only screen and (max-width: 655px) {
-    #headernav li {
+	    .headerNav li {
         font-size: .6em;
     }
 }
 
-#headernav li a.links {
+	.headerNav li a.links {
 	text-decoration:none;
 	color:#d4d5c8;
 }
 
-#headernav li a:hover {
-color:#fff;
+	.headerNav li a:hover {
+	color:#fff;
 }
 
 li a img.headerpic {
-      border-radius: 50%;
-      height: 5em;
+  border-radius: 50%;
+  height: 5em;
 }
 
 #aboutme {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	color: #0a2535;
+	color: #fff;
 	font-family: Arial;
 }
 
-#aboutme h1 {
-	color: #0a2535;
+#aboutme h2 {
+	color: #fff;
 	font-family: Arial;
 }
 
 #aboutme h3 {
-	color: #0a2535;
+	color: #fff;
 	font-family: Arial;
 	font-weight: normal;
 	margin-left: 25%;
@@ -91,15 +91,15 @@ li a img.headerpic {
 }
 
 
-#experience h1 {
+#experience h2 {
 	text-align: center;
-	color: #0a2535;
+	color: #fff;
 	font-family: Arial;
 }
 
 #experience h3 {
 	text-align: center;
-	color: #0a2535;
+	color: #fff;
 	font-family: Arial;
 	font-weight: normal;
 	margin-left: 25%;
