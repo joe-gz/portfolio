@@ -16,7 +16,8 @@ window.onload = function() {
    };
 
    document.getElementById("popup").addEventListener("click", function(){
-      var popup = document.getElementById("popup");popup.style.display = "none";
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
       var overlay = document.getElementById("overlay");
       overlay.style.display = "none";
    }, true);

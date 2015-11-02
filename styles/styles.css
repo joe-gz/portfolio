@@ -113,12 +113,21 @@ li a img.headerPic:hover {
 	text-align: center;
 	color: #fff;
 	font-family: Arial;
+	overflow: auto;
 }
 
 .aboutMe p {
 	font-weight: normal;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+
+.aboutMePic {
+	float: left;
+	border-radius: 5%;
+	margin-left:2%;
+	padding: .2em;
 }
 
 
