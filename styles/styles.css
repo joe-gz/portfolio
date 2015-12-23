@@ -98,6 +98,10 @@ font-size: .8em;
 	height: 40em;
 }
 
+.top p {
+	line-height: 150%;
+}
+
 .top p, .experience p {
 	font-family: 'Josefin Sans', sans-serif;
 	margin: 0 auto;
@@ -264,6 +268,9 @@ height: 300px;
 	.aboutMePic {
 		width: 15em;
 	}
+	.project-title {
+		font-size: 1.5em;
+	}
 }
 
 @media only screen and (max-width: 460px) {
@@ -288,6 +295,17 @@ height: 300px;
 	}
 	.aboutMe, .experience {
 		height: 25em;
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	.portfolio-image {
+		width: 10em;
+		height: 7em;
+	}
+	.aboutMePic {
+		width: 13em;
+		margin-right: .3em;
 	}
 }
 

@@ -38,10 +38,8 @@
 		<span class="anchor" id="topAnchor"></span>
 		<div class="top">
 			<h1>Joe Glatman Zaretsky</h1>
-			<!-- <img class="aboutMePic" src="images/bowling.jpg"> -->
 			<p>
 				A dedicated problem solver who is always excited to learn more and thrives in team environments. Challenges constantly drive me, and I have proven time and again that I can adapt to succeed in any situation. I pride myself on my ability to think quickly, find logical solutions, and communicate effectively.
-
 			</p>
 		</div>
 
@@ -61,10 +59,9 @@
 		<span class="anchor" id="portfolioAnchor"></span>
 		<div data-ng-app="portfolio" class="portfolio">
 			<h1>Portfolio</h1>
-			<div class="portfolio-paragraph">Here are a few examples of my work so far!</div>
+			<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
 			<div class = "stack" ng-controller='ProjectIndexController as ProjectsViewModel'>
 				<div data-ng-repeat = "project in ProjectsViewModel.projects">
-					<!-- <div>{{project.title}}</div> -->
 					<a href="{{project.url}}">
 						<img class="portfolio-image portfolio-image{{$index}}" src="{{project.photo_url}}">
 					</a>
@@ -113,6 +110,3 @@
 
 </body>
 </html>
-
-<!--
--->
