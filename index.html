@@ -50,63 +50,71 @@
 			<p>
 				Hi, I'm Joe! I am a full stack Web Developer currently finishing up the Web Development Immersive course at General Assembly.
 				I am extremely pasisonate about Web Development, and all of the challenges it brings.</p>
-			<p>
-				When not working on improving my development skills, I am either running around outside, or ideally traveling to a new country.
-				I've hit six out of the seven continents, and 34 countries total; definitely a bit of an obsession!
-			</p>
-		</div>
+				<p>
+					When not working on improving my development skills, I am either running around outside, or ideally traveling to a new country.
+					I've hit six out of the seven continents, and 34 countries total; definitely a bit of an obsession!
+				</p>
+			</div>
 
-		<span class="anchor" id="portfolioAnchor"></span>
-		<div data-ng-app="portfolio" class="portfolio">
-			<h1>Portfolio</h1>
-			<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
-			<div class = "stack" ng-controller='ProjectIndexController as ProjectsViewModel'>
-				<div data-ng-repeat = "project in ProjectsViewModel.projects">
-					<a href="{{project.url}}">
-						<img class="portfolio-image portfolio-image{{$index}}" src="{{project.photo_url}}">
-					</a>
-					<div class="project-description">
-						<h2 class = "project-title">{{project.title}}</h2>
-						<p>{{project.description}}</p>
+			<span class="anchor" id="portfolioAnchor"></span>
+			<div data-ng-app="portfolio" class="portfolio">
+				<h1>Portfolio</h1>
+				<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
+				<div class = "stack" ng-controller='ProjectIndexController as ProjectsViewModel'>
+					<div data-ng-repeat = "project in ProjectsViewModel.projects">
+						<a href="{{project.url}}">
+							<img class="portfolio-image portfolio-image{{$index}}" ng-src="{{project.photo_url}}">
+						</a>
+						<div class="project-description">
+							<h2 class = "project-title">{{project.title}}</h2>
+							<p>{{project.description}}</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<span class="anchor" id="experienceAnchor"></span>
-		<div class="experience">
-			<h1>
-				Prior Experience
-			</h1>
-			<p>
-				As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I was responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I was able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
-			</p>
-		</div>
-	</div>
-
-	<footer>
-		<span class="anchor" id="contactAnchor"></span>
-		<div class="contact">
-			<h1>
-				Contact Information
-			</h1>
-			<div>
-				Joe Glatman Zaretsky
-			</div>
-			<span>
-				<a i class = "fa fa-envelope" href="mailto:Jglatmanzaretsky@gmail.com"></a>
-			</span>
-			<span>
-				<a i class = "fa fa-linkedin-square" href="https://www.linkedin.com/pub/joseph-glatman-zaretsky/10/1/a29" title="facebook"></a>
-			</span>
-			<span>
-				<a i class = "fa fa-facebook" href="https://www.facebook.com/joe.zaretsky" title="facebook"></a>
-			</span>
-			<div>
-				(347) 256-7665
+			<span class="anchor" id="experienceAnchor"></span>
+			<div class="experience">
+				<h1>
+					Experience
+				</h1>
+				<h2 class = "skills">Skills</h2>
+					<p>JavaScript | jQuery | AngularJS | HTML5 | CSS | AJAX | JSON | D3.js | Ruby | Rails | Sinatra | API Integration | Bootstrap | AWS</p>
+					<p>PostgreSQL | MYSQL | Microsoft Access | RSpec | Git | GitHub | Heroku | Command Line</p>
+					<p>Microsoft Excel | PowerPoint | Word | R Statistical Software | Stata</p>
+				<h2 class = "prior-head">Prior Experience</h2>
+					<p class = "prior">
+						As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I was responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I was able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
+					</p>
 			</div>
 		</div>
-	</footer>
 
-</body>
-</html>
+		<footer>
+			<span class="anchor" id="contactAnchor"></span>
+			<div class="contact">
+				<h1>
+					Contact Information
+				</h1>
+				<div>
+					Joe Glatman Zaretsky
+				</div>
+				<span>
+					<a i class = "fa fa-envelope" href="mailto:Jglatmanzaretsky@gmail.com"></a>
+				</span>
+				<span>
+					<a i class = "fa fa-linkedin-square" href="https://www.linkedin.com/pub/joseph-glatman-zaretsky/10/1/a29" title="facebook"></a>
+				</span>
+				<span>
+					<a i class = "fa fa-facebook" href="https://www.facebook.com/joe.zaretsky" title="facebook"></a>
+				</span>
+				<span>
+					<a class = "blog" href="https://joegz.wordpress.com/" title="blog">Blog</a>
+				</span>
+				<div>
+					(347) 256-7665
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	</html>
