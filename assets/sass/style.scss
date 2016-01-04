@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+$headerFont:'Josefin Slab';
+$textFont:'Josefin Sans';
+$lightFontColor:#E5E5E5;
+$darkFontColor:#3A383B;
+$paragraphFontSize: 1.5em;
+
+@function contrastingColor($bgcolor){
+  @if lightness($bgcolor) < 35 {
+    @return $lightFontColor;
+  }
+  @else {@return $darkFontColor;
+  }
+}
+
+@mixin backgroundToFont($background) {
+  color:contrastingColor($background);
+  background-color:$background;
+}
+
+@function textShadowString($offset, $color) {
+  $text-shadow:();
+  @for $i from 1 through $offset {
+    $string:(-1*$i)+px #{$i - 1}px 0px $color;
+    $text-shadow:append($text-shadow, $string,       comma);
+  }
+  @return $text-shadow;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-family: $headerFont, serif;
+  font-size: 3em;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.anchor{
+  display: block;
+  height: 2.8em; /*same height as header*/
+  margin-top: -2.8em; /*same height as header*/
+  visibility: hidden;
+}
+
+nav {
+  text-align: center;
+}
+
+.headerNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.headerNav ul {
+  height: 2.8em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgba(0, 0, 0,0.6);
+}
+
+.headerNav li {
+  display: inline-table;
+  height: 2.5em;
+}
+
+.headerName {
+  padding-left: .2em;
+  padding-top: .1em;
+  font-size: 2em;
+  float: left;
+}
+
+.headerName a {
+  text-shadow: textShadowString(5, rgba(0, 0, 0,0.6));
+  font-family: $headerFont, serif;
+  text-decoration:none;
+  color:$lightFontColor;
+}
+
+.nav-links {
+  float: right;
+  padding-top: .8em;
+  padding-right: 2%;
+}
+
+.nav-links li a {
+  text-shadow: textShadowString(5, rgba(0, 0, 0,0.6));
+  font-family: $headerFont, serif;
+  text-decoration:none;
+  color:$lightFontColor;
+}
+
+.headerNav li a:hover {
+  color:#fff;
+}
+
+.top {
+  background: url("../images/norway2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4%;
+  text-align: center;
+  color: $lightFontColor;
+  overflow: auto;
+  height: 40em;
+}
+
+.top p {
+  line-height: 150%;
+}
+
+.top p, .experience p {
+  font-family: $textFont, sans-serif;
+  margin: 0 auto;
+  font-weight: normal;
+  width: 75%;
+  padding-top: 2%;
+  font-size:$paragraphFontSize;
+}
+
+.top h1 {
+  margin-top: 2em;
+  font-size: 4em;
+}
+
+.portfolio {
+  height: 40em;
+  padding-top: 2%;
+  text-align: center;
+  @include backgroundToFont($darkFontColor);
+}
+
+.portfolio-image {
+  width: 18em;
+  height: 13em;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.project-description {
+  vertical-align: middle;
+  height: 15em;
+  margin: 2em;
+  font-family: $textFont, sans-serif;
+}
+
+.project-description p {
+  font-size:$paragraphFontSize;
+}
+
+.portfolio-image0 {
+  float:left;
+  margin-right:1em;
+  margin-left: 1em;
+}
+
+.portfolio-image1 {
+  float:right;
+  margin-right:1em;
+  margin-left: 1em;
+}
+
+.portfolio-paragraph {
+  margin-bottom: .3em;
+  padding: 0;
+  font-family: $textFont, sans-serif;
+  font-size:$paragraphFontSize;
+}
+
+.project-title {
+  font-family: $headerFont, serif;
+  font-size: 2em;
+}
+
+.aboutMe {
+  @include backgroundToFont($lightFontColor);
+  height: 30em;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.aboutMe p, .experience p {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 75%;
+  padding-top: 2%;
+  text-align: left;
+  font-family: $textFont, sans-serif;
+  font-size:$paragraphFontSize;
+}
+
+.aboutMePic {
+  width: 20em;
+  height: auto;
+  float: left;
+  border-radius: 5%;
+  margin-left:2%;
+  margin-right: 2%;
+  padding: .2em;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.experience {
+  padding-top: 2%;
+  text-align: center;
+  color: $darkFontColor;
+  height: 30em;
+}
+
+.experience h2 {
+  font-family: $headerFont, serif;
+}
+
+.skills {
+  margin: 0;
+  padding-top:2%;
+}
+
+.experience p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.prior-head {
+  margin: 0;
+  padding-top: 4%;
+}
+
+.prior {
+  line-height: 125%;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  @include backgroundToFont(#495159);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 10em;
+  bottom: 0;
+  font-family: $textFont, sans-serif;
+}
+
+.contact h1 {
+  list-style-type: none;
+  font-weight: normal;
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 655px) {
+  .nav-links {
+    padding-top: 1em;
+    font-size: .8em;
+  }
+  .top h1 {
+    font-size: 3em;
+  }
+  .aboutMe h1, .portfolio h1, .experience h1, .contact h1 {
+    font-size: 2em;
+  }
+  .aboutMe p, .project-description p {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .aboutMe p, .experience p, .project-description p {
+    font-size: 1em;
+  }
+  .portfolio-image {
+    height: 10em;
+  }
+  .aboutMePic, .portfolio-image {
+    width: 15em;
+  }
+  .project-title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .portfolio-image {
+    width: 10em;
+    height: 7em;
+  }
+  .aboutMePic {
+    width: 13em;
+    margin-right: .3em;
+  }
+  .experience p {
+    line-height: normal;
+  }
+}
+
+.fa-facebook, .fa-globe, .fa-linkedin-square, .fa-envelope, .blog {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+}

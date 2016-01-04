@@ -1,328 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 * {
-	box-sizing: border-box;
-}
-
-body {
-	width: 100%;
-	margin: 0;
-}
+  box-sizing: border-box; }
 
 h1 {
-	margin:0px;
-	font-family: 'Josefin Slab', serif;
-	font-size: 3em;
-}
+  margin: 0;
+  font-family: "Josefin Slab", serif;
+  font-size: 3em; }
+
+body {
+  width: 100%;
+  margin: 0; }
 
 .container {
-	margin: 0 auto;
-}
+  margin: 0 auto; }
 
-.anchor{
-	display: block;
-	height: 2.8em; /*same height as header*/
-	margin-top: -2.8em; /*same height as header*/
-	visibility: hidden;
-}
+.anchor {
+  display: block;
+  height: 2.8em;
+  /*same height as header*/
+  margin-top: -2.8em;
+  /*same height as header*/
+  visibility: hidden; }
 
 nav {
-	text-align: center;
-}
+  text-align: center; }
 
 .headerNav {
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
+  position: fixed;
+  width: 100%;
+  top: 0; }
 
 .headerNav ul {
-	height: 2.8em;
-	list-style-type: none;
-	margin: 0 auto;
-	padding: 0;
-	background-color: rgba(0, 0, 0,0.6);
-}
+  height: 2.8em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .headerNav li {
-	display: inline-table;
-	height: 2.5em;
-}
+  display: inline-table;
+  height: 2.5em; }
 
 .headerName {
-	padding-left: .2em;
-	padding-top: .1em;
-	font-size: 2em;
-	float: left;
-}
+  padding-left: .2em;
+  padding-top: .1em;
+  font-size: 2em;
+  float: left; }
 
 .headerName a {
-	font-family: 'Josefin Slab', serif;
-	text-decoration:none;
-	color:#E5E5E5;
-}
-
-/*.headerLinks {
-display:inline-block;
-}*/
-/*
-@media only screen and (max-width: 850px) {
-.nav-links, #aboutme, #experience, #contact {
-font-size: .8em;
-}
-}*/
+  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.6), -2px 1px 0px rgba(0, 0, 0, 0.6), -3px 2px 0px rgba(0, 0, 0, 0.6), -4px 3px 0px rgba(0, 0, 0, 0.6), -5px 4px 0px rgba(0, 0, 0, 0.6);
+  font-family: "Josefin Slab", serif;
+  text-decoration: none;
+  color: #E5E5E5; }
 
 .nav-links {
-	float: right;
-	padding-top: .8em;
-	padding-right: 2%;
-}
+  float: right;
+  padding-top: .8em;
+  padding-right: 2%; }
 
 .nav-links li a {
-	font-family: 'Josefin Slab', serif;
-	text-decoration:none;
-	color:#E5E5E5;
-}
+  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.6), -2px 1px 0px rgba(0, 0, 0, 0.6), -3px 2px 0px rgba(0, 0, 0, 0.6), -4px 3px 0px rgba(0, 0, 0, 0.6), -5px 4px 0px rgba(0, 0, 0, 0.6);
+  font-family: "Josefin Slab", serif;
+  text-decoration: none;
+  color: #E5E5E5; }
 
 .headerNav li a:hover {
-	color:#fff;
-}
+  color: #fff; }
 
 .top {
-	background: url("../images/norway2.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 4%;
-	text-align: center;
-	color: #E5E5E5;
-	overflow: auto;
-	height: 40em;
-}
+  background: url("../images/norway2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4%;
+  text-align: center;
+  color: #E5E5E5;
+  overflow: auto;
+  height: 40em; }
 
 .top p {
-	line-height: 150%;
-}
+  line-height: 150%; }
 
 .top p, .experience p {
-	font-family: 'Josefin Sans', sans-serif;
-	margin: 0 auto;
-	font-weight: normal;
-	width: 75%;
-	padding-top: 2%;
-	font-size: 1.5em;
-}
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+  font-weight: normal;
+  width: 75%;
+  padding-top: 2%;
+  font-size: 1.5em; }
 
 .top h1 {
-	margin-top: 2em;
-	font-size: 4em;
-}
+  margin-top: 2em;
+  font-size: 4em; }
 
 .portfolio {
-	background-color: #3A383B;
-	height: 40em;
-	padding-top: 2%;
-	text-align: center;
-	color: #E5E5E5;
-}
+  height: 40em;
+  padding-top: 2%;
+  text-align: center;
+  color: #E5E5E5;
+  background-color: #3A383B; }
 
 .portfolio-image {
-	width: 18em;
-	height: 13em;
-	border-radius: 5%;
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
+  width: 18em;
+  height: 13em;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .project-description {
-	vertical-align: middle;
-	height: 15em;
-	margin: 2em;
-	font-family: 'Josefin Sans', sans-serif;
-	/*background-color: rgba(255, 255, 255,0.4);*/
-}
+  vertical-align: middle;
+  height: 15em;
+  margin: 2em;
+  font-family: "Josefin Sans", sans-serif; }
 
 .project-description p {
-	font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .portfolio-image0 {
-	float:left;
-	margin-right:1em;
-	margin-left: 1em;
-}
+  float: left;
+  margin-right: 1em;
+  margin-left: 1em; }
 
 .portfolio-image1 {
-	float:right;
-	margin-right:1em;
-	margin-left: 1em;
-}
+  float: right;
+  margin-right: 1em;
+  margin-left: 1em; }
 
 .portfolio-paragraph {
-	margin-bottom: .3em;
-	padding: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.5em;
-}
+  margin-bottom: .3em;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em; }
 
 .project-title {
-	font-family: 'Josefin Slab', serif;
-	font-size: 2em;
-}
-
-/*.portfolio-image:hover {
-width: auto;
-height: 300px;
-}*/
+  font-family: "Josefin Slab", serif;
+  font-size: 2em; }
 
 .aboutMe {
-	background-color: #E5E5E5;
-	height: 30em;
-	padding-top: 2%;
-	text-align: center;
-	color: #3A383B;
-}
+  color: #3A383B;
+  background-color: #E5E5E5;
+  height: 30em;
+  padding-top: 2%;
+  text-align: center; }
 
 .aboutMe p, .experience p {
-	margin: 0 auto;
-	font-weight: normal;
-	width: 75%;
-	padding-top: 2%;
-	text-align: left;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.5em;
-}
+  margin: 0 auto;
+  font-weight: normal;
+  width: 75%;
+  padding-top: 2%;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em; }
 
 .aboutMePic {
-	width: 20em;
-	height: auto;
-	float: left;
-	border-radius: 5%;
-	margin-left:2%;
-	margin-right: 2%;
-	padding: .2em;
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
+  width: 20em;
+  height: auto;
+  float: left;
+  border-radius: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: .2em;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .experience {
-	padding-top: 2%;
-	text-align: center;
-	color: #3A383B;
-	height: 30em;
-}
+  padding-top: 2%;
+  text-align: center;
+  color: #3A383B;
+  height: 30em; }
 
 .experience h2 {
-	font-family: 'Josefin Slab', serif;
-}
+  font-family: "Josefin Slab", serif; }
 
 .skills {
-	margin: 0;
-	padding-top:2%;
-}
+  margin: 0;
+  padding-top: 2%; }
 
 .experience p {
-	font-size: 1em;
-	text-align: center;
-}
+  font-size: 1em;
+  text-align: center; }
 
 .prior-head {
-	margin: 0;
-	padding-top: 4%;
-}
+  margin: 0;
+  padding-top: 4%; }
 
 .prior {
-	line-height: 125%;
-	margin: 0;
-	padding: 0;
-}
+  line-height: 125%;
+  margin: 0;
+  padding: 0; }
 
 .contact {
-	background-color: #495159;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	color: #E5E5E5;
-	height: 10em;
-	bottom: 0;
-	font-family: 'Josefin Sans', sans-serif;
-}
+  color: #E5E5E5;
+  background-color: #495159;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 10em;
+  bottom: 0;
+  font-family: "Josefin Sans", sans-serif; }
 
 .contact h1 {
-	list-style-type: none;
-	font-weight: normal;
-	padding-top: 1em;
-}
+  list-style-type: none;
+  font-weight: normal;
+  padding-top: 1em; }
 
 @media only screen and (max-width: 655px) {
-	.nav-links {
-		padding-top: 1em;
-		font-size: .8em;
-	}
-	.top h1 {
-		font-size: 3em;
-	}
-	.aboutMe h1, .portfolio h1, .experience h1, .contact h1 {
-		font-size: 2em;
-	}
-	.aboutMe p, .project-description p {
-		font-size: 1.3em;
-	}
-}
+  .nav-links {
+    padding-top: 1em;
+    font-size: .8em; }
 
+  .top h1 {
+    font-size: 3em; }
+
+  .aboutMe h1, .portfolio h1, .experience h1, .contact h1 {
+    font-size: 2em; }
+
+  .aboutMe p, .project-description p {
+    font-size: 1.3em; } }
 @media only screen and (max-width: 530px) {
-	.aboutMe p, .experience p, .project-description p {
-		font-size: 1em;
-	}
-	.portfolio-image {
-		width: 15em;
-		height: 10em;
-	}
-	.aboutMePic {
-		width: 15em;
-	}
-	.project-title {
-		font-size: 1.5em;
-	}
-}
+  .aboutMe p, .experience p, .project-description p {
+    font-size: 1em; }
 
-@media only screen and (max-width: 460px) {
-	.top h1 {
-		font-size: 2em;
-	}
-	.project-description {
-		height: 10em;
-	}
-	.project-description p, .experience p {
-		font-size: .8em;
-	}
-	.portfolio-image {
-		width: 12em;
-		height: 9em;
-	}
-	.top p {
-		font-size: 1em;
-	}
-	.top,.portfolio {
-		height: 30em;
-	}
-	.aboutMe, .experience {
-		height: 25em;
-	}
-}
+  .portfolio-image {
+    height: 10em; }
 
-@media only screen and (max-width: 410px) {
-	.portfolio-image {
-		width: 10em;
-		height: 7em;
-	}
-	.aboutMePic {
-		width: 13em;
-		margin-right: .3em;
-	}
-	.experience p {
-		line-height: normal;
-	}
-}
+  .aboutMePic, .portfolio-image {
+    width: 15em; }
 
+  .project-title {
+    font-size: 1.5em; } }
+@media only screen and (max-width: 430px) {
+  .portfolio-image {
+    width: 10em;
+    height: 7em; }
+
+  .aboutMePic {
+    width: 13em;
+    margin-right: .3em; }
+
+  .experience p {
+    line-height: normal; } }
 .fa-facebook, .fa-globe, .fa-linkedin-square, .fa-envelope, .blog {
-	font-size: 1.2em;
-	text-decoration: none;
-	color: white;
-}
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */
