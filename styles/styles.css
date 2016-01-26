@@ -95,8 +95,8 @@ nav {
   font-size: 4em; }
 
 .portfolio {
-  height: 40em;
   padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
   color: #E5E5E5;
   background-color: #3A383B; }
@@ -107,11 +107,14 @@ nav {
   border-radius: 5%;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
 
-.project-description {
+.project-card a {
+  text-decoration: none; }
+
+.project-paragraph {
   vertical-align: middle;
-  height: 15em;
-  margin: 2em;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  color: #E5E5E5;
+  background-color: #3A383B; }
 
 .project-description p {
   font-size: 1.5em; }
@@ -126,6 +129,13 @@ nav {
   margin-right: 1em;
   margin-left: 1em; }
 
+.project-card:before, .project-card:after {
+  content: "";
+  display: table; }
+
+.project-card:after {
+  clear: both; }
+
 .portfolio-paragraph {
   margin-bottom: .3em;
   padding: 0;
@@ -134,13 +144,16 @@ nav {
 
 .project-title {
   font-family: "Josefin Slab", serif;
-  font-size: 2em; }
+  font-size: 2em;
+  vertical-align: middle;
+  color: #E5E5E5;
+  background-color: #3A383B; }
 
 .aboutMe {
   color: #3A383B;
   background-color: #E5E5E5;
-  height: 30em;
   padding-top: 2%;
+  padding-bottom: 10%;
   text-align: center; }
 
 .aboutMe p, .experience p {
@@ -164,9 +177,9 @@ nav {
 
 .experience {
   padding-top: 2%;
+  padding-bottom: 5%;
   text-align: center;
-  color: #3A383B;
-  height: 30em; }
+  color: #3A383B; }
 
 .experience h2 {
   font-family: "Josefin Slab", serif; }
@@ -192,9 +205,7 @@ nav {
   color: #E5E5E5;
   background-color: #495159;
   margin: 0;
-  padding: 0;
   text-align: center;
-  height: 10em;
   bottom: 0;
   font-family: "Josefin Sans", sans-serif; }
 

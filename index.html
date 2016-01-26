@@ -61,14 +61,12 @@
 				<h1>Portfolio</h1>
 				<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
 				<div class = "stack" ng-controller='ProjectIndexController as ProjectsViewModel'>
-					<div data-ng-repeat = "project in ProjectsViewModel.projects">
+					<div class = "project-card" data-ng-repeat = "project in ProjectsViewModel.projects">
 						<a href="{{project.url}}">
 							<img class="portfolio-image portfolio-image{{$index}}" ng-src="{{project.photo_url}}">
+								<h2 class = "project-title">{{project.title}}</h2>
+								<p class = "project-paragraph">{{project.description}}</p>
 						</a>
-						<div class="project-description">
-							<h2 class = "project-title">{{project.title}}</h2>
-							<p>{{project.description}}</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -79,13 +77,13 @@
 					Experience
 				</h1>
 				<h2 class = "skills">Skills</h2>
-					<p>JavaScript | jQuery | AngularJS | HTML5 | CSS | AJAX | JSON | D3.js | Ruby | Rails | Sinatra | API Integration | Bootstrap | AWS</p>
-					<p>PostgreSQL | MYSQL | Microsoft Access | RSpec | Git | GitHub | Heroku | Command Line</p>
-					<p>Microsoft Excel | PowerPoint | Word | R Statistical Software | Stata</p>
+				<p>JavaScript | jQuery | AngularJS | HTML5 | CSS | AJAX | JSON | D3.js | Ruby | Rails | Sinatra | API Integration | Bootstrap | AWS</p>
+				<p>PostgreSQL | MYSQL | Microsoft Access | RSpec | Git | GitHub | Heroku | Command Line</p>
+				<p>Microsoft Excel | PowerPoint | Word | R Statistical Software | Stata</p>
 				<h2 class = "prior-head">Prior Experience</h2>
-					<p class = "prior">
-						As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I was responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I was able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
-					</p>
+				<p class = "prior">
+					As a Senior Analyst for the Strategy and Operations team at The Advisory Board Company, I was responsible for analytics and goal setting for the performance of the account management team, as well as Salesforce.com support.  Through my position, I was able to work on long-term projects directed at diagnosing changes in product sales, and the "health" of memberships with hospitals and universities.
+				</p>
 			</div>
 		</div>
 

@@ -140,8 +140,8 @@ nav {
 }
 
 .portfolio {
-  height: 40em;
   padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
   @include backgroundToFont($darkFontColor);
 }
@@ -153,11 +153,14 @@ nav {
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
-.project-description {
+.project-card a {
+  text-decoration: none;
+}
+
+.project-paragraph {
   vertical-align: middle;
-  height: 15em;
-  margin: 2em;
   font-family: $textFont, sans-serif;
+  @include backgroundToFont($darkFontColor);
 }
 
 .project-description p {
@@ -176,6 +179,15 @@ nav {
   margin-left: 1em;
 }
 
+.project-card:before, .project-card:after {
+  content: "";
+  display: table;
+}
+
+.project-card:after {
+  clear: both;
+}
+
 .portfolio-paragraph {
   margin-bottom: .3em;
   padding: 0;
@@ -186,12 +198,14 @@ nav {
 .project-title {
   font-family: $headerFont, serif;
   font-size: 2em;
+  vertical-align: middle;
+  @include backgroundToFont($darkFontColor);
 }
 
 .aboutMe {
   @include backgroundToFont($lightFontColor);
-  height: 30em;
   padding-top: 2%;
+  padding-bottom: 10%;
   text-align: center;
 }
 
@@ -218,9 +232,9 @@ nav {
 
 .experience {
   padding-top: 2%;
+  padding-bottom: 5%;
   text-align: center;
   color: $darkFontColor;
-  height: 30em;
 }
 
 .experience h2 {
@@ -251,9 +265,7 @@ nav {
 .contact {
   @include backgroundToFont(#495159);
   margin: 0;
-  padding: 0;
   text-align: center;
-  height: 10em;
   bottom: 0;
   font-family: $textFont, sans-serif;
 }
@@ -263,6 +275,66 @@ nav {
   font-weight: normal;
   padding-top: 1em;
 }
+
+// .column {
+//   // border: 2px solid tomato;
+//   /*display: inline-block;*/
+//   float: left;
+//   border-radius: 5px;
+//   text-align: center;
+// }
+//
+// .row:before, .row:after {
+//   content: "";
+//   display: table;
+// }
+//
+// .row:after {
+//   clear: both;
+// }
+//
+// .row,.column {
+//   box-sizing: border-box;
+// }
+//
+// .column-1 { width: 6.333%; }
+// .column-2 { width: 14.66%; }
+// .column-3 { width: 23%; }
+// .column-4 { width: 31.33%; }
+// .column-5 { width: 39.66%; }
+// .column-6 { width: 48%; }
+// .column-7 { width: 56.33%; }
+// .column-8 { width: 64.66%; }
+// .column-9 { width: 73%; }
+// .column-10 { width: 81.33%; }
+// .column-11 { width: 89.66%; }
+// .column-12 { width: 98%; }
+//
+// .middle > .column {
+//   height: 400px;
+//   line-height: 400px;
+// }
+//
+// .header > .column,
+// .footer > .column {
+//   padding: 25px;
+// }
+//
+// .header ul {
+//   margin: auto;
+// }
+//
+// .header li {
+//   display: inline-block;
+//   list-style-type: none;
+// }
+//
+// @media only screen and (max-width: 480px) {
+//   .column {
+//     margin: 1% 0 1% 0%;
+//     width: 100%;
+//   }
+// }
 
 @media only screen and (max-width: 655px) {
   .nav-links {
