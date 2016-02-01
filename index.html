@@ -64,8 +64,10 @@
 					<div class = "project-card" data-ng-repeat = "project in ProjectsViewModel.projects">
 						<a href="{{project.url}}">
 							<img class="portfolio-image portfolio-image{{$index}}" ng-src="{{project.photo_url}}">
+							<div class="project-text-wrapper">
 								<h2 class = "project-title">{{project.title}}</h2>
 								<p class = "project-paragraph">{{project.description}}</p>
+							</div>
 						</a>
 					</div>
 				</div>
