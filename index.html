@@ -60,10 +60,10 @@
 			<div data-ng-app="portfolio" class="portfolio">
 				<h1>Portfolio</h1>
 				<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
-				<div class = "stack" ng-controller='ProjectIndexController as ProjectsViewModel'>
-					<div class = "project-card" data-ng-repeat = "project in ProjectsViewModel.projects">
+				<div class = "row" ng-controller='ProjectIndexController as ProjectsViewModel'>
+					<div class = "project-card column-6" data-ng-repeat = "project in ProjectsViewModel.projects">
 						<a href="{{project.url}}">
-							<img class="portfolio-image portfolio-image{{$index}}" ng-src="{{project.photo_url}}">
+							<img class="portfolio-image" ng-src="{{project.photo_url}}">
 							<div class="project-text-wrapper">
 								<h2 class = "project-title">{{project.title}}</h2>
 								<p class = "project-paragraph">{{project.description}}</p>
