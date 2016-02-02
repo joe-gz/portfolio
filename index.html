@@ -60,8 +60,17 @@
 			<div data-ng-app="portfolio" class="portfolio">
 				<h1>Portfolio</h1>
 				<div class="portfolio-paragraph">Here are a couple examples of my work so far!</div>
+				<div class="main-project">
+						<a href="https://baseball-visuals.herokuapp.com/#/leagues/82326">
+							<img class="main-portfolio-image" src="images/baseballVisuals.png">
+							<div class="project-text-wrapper">
+								<h2 class = "project-title">baseballVisuals</h2>
+								<p class = "project-paragraph">A fantasy sports app, built in Node, Express, and AngularJS, provides users the ability to visualize their data for auction fantasy baseball leagues.</p>
+							</div>
+						</a>
+				</div>
 				<div class = "row" ng-controller='ProjectIndexController as ProjectsViewModel'>
-					<div class = "project-card column-6" data-ng-repeat = "project in ProjectsViewModel.projects">
+					<div class = "column column-6 project-card" data-ng-repeat = "project in ProjectsViewModel.projects">
 						<a href="{{project.url}}">
 							<img class="portfolio-image" ng-src="{{project.photo_url}}">
 							<div class="project-text-wrapper">
