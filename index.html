@@ -134,5 +134,40 @@
 			</div>
 		</footer>
 
+		<style>
+			.wrapper {
+				color: #fff;
+			}
+
+			.wrapper.showBubbles .bar {
+				display: none;
+			}
+
+			.wrapper.showBubbles .bubble {
+				display: block;
+			}
+
+			.wrapper .bar {
+				display: block;
+			}
+
+			.wrapper .bubble {
+				display: none;
+			}
+
+		</style>
+
+		<div class="wrapper" ng-class="{'showBubbles': isBubbles}" ng-init="showBubbles = true">
+
+			<div class="bubble">BUBBLES</div>
+			<div class="bar">BARS</div>
+
+		</div>
+
+		<div class="btns">
+			<button class="showBubble" ng-click="isBubbles">Bubble On</button>
+			<button class="showBars" ng-click="!isBubbles">Bar on</button>
+		</div>
+
 	</body>
 	</html>
