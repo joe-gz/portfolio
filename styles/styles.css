@@ -11,12 +11,21 @@ h1 {
 body {
   width: 100%;
   margin: 0;
-  background: url("../images/norway2.jpg") no-repeat center center fixed;
-  background-attachment: fixed;
-  background-size: cover; }
+  background: #222; }
 
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+  .container:before {
+    content: "";
+    background: url("../images/norway4.jpg") no-repeat top center fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    z-index: -1; }
 
 .anchor {
   display: block;
@@ -34,7 +43,8 @@ nav {
 .headerNav {
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
 
 .headerNav ul {
   height: 2.8em;
@@ -45,7 +55,7 @@ nav {
 
 .headerNav li {
   display: inline-table;
-  height: 2.5em; }
+  margin: 0 0.75em; }
 
 .headerName {
   padding-left: .2em;
@@ -54,7 +64,6 @@ nav {
   float: left; }
 
 .headerName a {
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.6), -2px 1px 0px rgba(0, 0, 0, 0.6), -3px 2px 0px rgba(0, 0, 0, 0.6), -4px 3px 0px rgba(0, 0, 0, 0.6), -5px 4px 0px rgba(0, 0, 0, 0.6);
   font-family: "Josefin Slab", serif;
   text-decoration: none;
   color: #E5E5E5; }
@@ -65,13 +74,12 @@ nav {
   padding-right: 2%; }
 
 .nav-links li a {
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.6), -2px 1px 0px rgba(0, 0, 0, 0.6), -3px 2px 0px rgba(0, 0, 0, 0.6), -4px 3px 0px rgba(0, 0, 0, 0.6), -5px 4px 0px rgba(0, 0, 0, 0.6);
   font-family: "Josefin Slab", serif;
   text-decoration: none;
-  color: #E5E5E5; }
-
-.headerNav li a:hover {
-  color: #fff; }
+  color: #E5E5E5;
+  transition: color ease 0.33s; }
+  .nav-links li a:hover {
+    color: #63a313; }
 
 .top {
   padding-top: 4%;
@@ -81,7 +89,8 @@ nav {
   height: 40em; }
 
 .top p {
-  line-height: 150%; }
+  line-height: 150%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
 
 .top p, .experience p {
   font-family: "Josefin Sans", sans-serif;
@@ -93,15 +102,15 @@ nav {
 
 .top h1 {
   margin-top: 2em;
-  font-size: 4em; }
+  font-size: 4em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
 
 .portfolio {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
-  opacity: 0.9;
   color: #E5E5E5;
-  background-color: #3A383B; }
+  background-color: rgba(34, 34, 34, 0.95); }
 
 .portfolio-paragraph {
   margin-bottom: .3em;
@@ -113,7 +122,7 @@ nav {
   position: relative;
   overflow: hidden;
   width: 60%;
-  margin: 0 auto; }
+  margin: 2em auto; }
 
 .second-projects {
   width: 75%;
@@ -139,8 +148,7 @@ nav {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .portfolio-image {
-  width: 100%;
-  height: 15em; }
+  width: 100%; }
 
 .main-portfolio-image {
   width: 100%; }
@@ -162,7 +170,7 @@ nav {
   font-family: "Josefin Slab", serif;
   font-size: 2em;
   vertical-align: middle;
-  color: #E5E5E5; }
+  color: #63a313; }
 
 .project-text-wrapper {
   position: absolute;
@@ -185,8 +193,8 @@ nav {
 
 .aboutMe {
   color: #3A383B;
-  background-color: #E5E5E5;
-  padding-top: 2%;
+  background-color: rgba(229, 229, 229, 0.95);
+  padding-top: 5%;
   padding-bottom: 10%;
   text-align: center;
   opacity: 0.9; }
@@ -206,12 +214,12 @@ nav {
   float: left;
   border-radius: 5%;
   margin-left: 2%;
-  margin-right: 2%;
+  margin-right: 4%;
   padding: .2em;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.25); }
 
 .experience {
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
   color: #3A383B;
@@ -240,12 +248,13 @@ nav {
 
 .contact {
   color: #E5E5E5;
-  background-color: #495159;
+  background-color: rgba(73, 81, 89, 0.95);
   margin: 0;
   text-align: center;
   bottom: 0;
   font-family: "Josefin Sans", sans-serif;
-  opacity: 0.9; }
+  opacity: 0.9;
+  padding-bottom: 2.5%; }
 
 .contact h1 {
   list-style-type: none;
@@ -341,7 +350,7 @@ nav {
     font-size: 1em; }
 
   .portfolio-image {
-    height: 10em; }
+    height: auto; }
 
   .aboutMePic, .portfolio-image {
     width: 15em; }
