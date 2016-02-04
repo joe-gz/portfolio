@@ -7,6 +7,7 @@ $lightFontColor:#E5E5E5;
 $darkFontColor:#3A383B;
 $paragraphFontSize: 1.5em;
 $colorWhite: white;
+$colorPrimary: #63a313;
 
 @function contrastingColor($bgcolor){
   @if lightness($bgcolor) < 35 {
@@ -18,7 +19,7 @@ $colorWhite: white;
 
 @mixin backgroundToFont($background) {
   color:contrastingColor($background);
-  background-color:$background;
+  background-color:fade-out($background, 0.05);
 }
 
 @function textShadowString($offset, $color) {
@@ -38,6 +39,7 @@ h1 {
   margin: 0;
   font-family: $headerFont, serif;
   font-size: 3em;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.15)
 }
 
 body {
@@ -69,6 +71,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.15)
 }
 
 .headerNav ul {
@@ -81,7 +84,6 @@ nav {
 
 .headerNav li {
   display: inline-table;
-  height: 2.5em;
 }
 
 .headerName {
@@ -92,10 +94,10 @@ nav {
 }
 
 .headerName a {
-  text-shadow: textShadowString(5, rgba(0, 0, 0,0.6));
   font-family: $headerFont, serif;
   text-decoration:none;
   color:$lightFontColor;
+  margin-left: 0.5em;
 }
 
 .nav-links {
@@ -105,21 +107,18 @@ nav {
 }
 
 .nav-links li a {
-  text-shadow: textShadowString(5, rgba(0, 0, 0,0.6));
   font-family: $headerFont, serif;
   text-decoration:none;
   color:$lightFontColor;
-}
+  margin: 0 0.75em;
+  transition: color ease 0.33s;
 
-.headerNav li a:hover {
-  color:#fff;
+  &:hover {
+    color: $colorPrimary;
+  }
 }
 
 .top {
-  // background: url("../images/norway2.jpg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   padding-top: 4%;
   text-align: center;
   color: $lightFontColor;
@@ -129,6 +128,7 @@ nav {
 
 .top p {
   line-height: 150%;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.15)
 }
 
 .top p, .experience p {
@@ -146,10 +146,9 @@ nav {
 }
 
 .portfolio {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
-  opacity: 0.9;
   @include backgroundToFont($darkFontColor);
 }
 
@@ -164,7 +163,7 @@ nav {
   position: relative;
   overflow: hidden;
   width: 60%;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .second-projects {
@@ -222,7 +221,7 @@ nav {
   font-family: $headerFont, serif;
   font-size: 2em;
   vertical-align: middle;
-  color: $lightFontColor;
+  color: $colorPrimary;
 }
 
 .project-text-wrapper {
@@ -249,10 +248,9 @@ nav {
 
 .aboutMe {
   @include backgroundToFont($lightFontColor);
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 10%;
   text-align: center;
-  opacity: 0.9;
 }
 
 .aboutMe p, .experience p {
@@ -271,9 +269,9 @@ nav {
   float: left;
   border-radius: 5%;
   margin-left:2%;
-  margin-right: 2%;
+  margin-right: 4%;
   padding: .2em;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
 }
 
 .experience {
@@ -317,6 +315,7 @@ nav {
   bottom: 0;
   font-family: $textFont, sans-serif;
   opacity: 0.9;
+  padding-bottom: 2.5%;
 }
 
 .contact h1 {
@@ -326,8 +325,6 @@ nav {
 }
 
 .column {
-  // border: 2px solid tomato;
-  /*display: inline-block;*/
   float: left;
   border-radius: 5px;
   text-align: center;
@@ -396,13 +393,19 @@ nav {
   .aboutMe h1, .portfolio h1, .experience h1, .contact h1 {
     font-size: 2em;
   }
-  .aboutMe p, .project-description p {
+  .aboutMe p {
     font-size: 1.3em;
+  }
+  .project-title {
+    font-size: 1.5em;
+  }
+  .project-paragraph {
+    font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 530px) {
-  .aboutMe p, .experience p, .project-description p {
+  .aboutMe p, .experience p {
     font-size: 1em;
   }
   .portfolio-image {
@@ -410,9 +413,6 @@ nav {
   }
   .aboutMePic, .portfolio-image {
     width: 15em;
-  }
-  .project-title {
-    font-size: 1.5em;
   }
 }
 
